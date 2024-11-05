@@ -1,3 +1,4 @@
+/* Resetando alguns elementos para manter a consistência */
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +10,6 @@ body {
     line-height: 1.6;
     background-color: #f8f9fa;
     color: #333;
-    margin: 0;
-    padding: 0;
 }
 
 #logo {
@@ -18,7 +17,7 @@ body {
 }
 
 header {
-    background-color: #2C3E50; 
+    background-color: #2C3E50;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -30,20 +29,20 @@ header img {
     margin-bottom: 10px;
 }
 
+.mg {
+    border-radius: 3px;
+}
+
 header h1 {
     font-size: 2.5em;
     margin-top: 10px;
-    color: #F1C40F; 
+    color: #F1C40F;
 }
 
 header p {
     font-size: 1.2em;
     color: #fff;
     margin-top: 10px;
-}
-
-.box {
-    margin-bottom: 30px;
 }
 
 main {
@@ -66,7 +65,8 @@ h2 {
     margin-bottom: 30px;
 }
 
-.filtro-container select, .filtro-container input[type="checkbox"] {
+.filtro-container select,
+.filtro-container input[type="checkbox"] {
     padding: 10px;
     font-size: 1em;
     border: 1px solid #BDC3C7;
@@ -81,8 +81,8 @@ h2 {
 }
 
 .card-categoria {
-    background-color: #fff;
-    border: 2px solid #BDC3C7; 
+    background-color: #ebebeb;
+    border: 2px solid #BDC3C7;
     border-radius: 10px;
     padding: 30px;
     text-align: center;
@@ -91,8 +91,10 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between; /* Para distribuir o conteúdo com o botão no fim */
     margin: 0 auto;
 }
+
 
 .card-categoria:hover {
     transform: translateY(-10px);
@@ -120,28 +122,30 @@ h2 {
 }
 
 .btn-cta {
-    display: inline-block;
     padding: 15px 30px;
     color: #fff;
-    background-color: #27AE60; 
+    background-color: #27AE60;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 1.1em;
+    align-self: center; /* Centraliza o botão dentro do card */
+    margin-top: auto; /* Empurra o botão para o final do card */
 }
 
 .btn-cta:hover {
     background-color: #1D8348;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
+
 
 .selo-parceiro-oficial {
     display: flex;
     align-items: center;
     padding: 20px;
-    background: linear-gradient(135deg, #0D47A1, #1E88E5); 
+    background: linear-gradient(135deg, #0D47A1, #1E88E5);
     color: #FFFFFF;
     border-radius: 15px;
     font-weight: bold;
@@ -151,13 +155,9 @@ h2 {
     letter-spacing: 1px;
     flex-direction: column;
     text-align: center;
-    max-width: 2000px;
+    max-width: 100%;
     margin: 30px auto;
     transition: transform 0.3s ease;
-}
-
-.selo-parceiro-oficial #certificado {
-    margin-bottom: 20px;
 }
 
 .selo-parceiro-oficial:hover {
@@ -183,7 +183,6 @@ h2 {
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 
 footer {
     background-color: #2C3E50;
